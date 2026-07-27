@@ -1,0 +1,212 @@
+.download{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:120px 8%;
+
+    background:#0b0517;
+
+    gap:70px;
+}
+
+.downloadLeft{
+    width:50%;
+}
+
+.downloadRight{
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.tag{
+
+    color:#b43cff;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+}
+
+.download h2{
+
+    font-size:60px;
+
+    color:white;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+}
+
+.downloadText{
+
+    color:#bcbcbc;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    max-width:520px;
+
+    margin-bottom:40px;
+}
+
+.storeButtons{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.storeButtons img{
+
+    width:190px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.storeButtons img:hover{
+
+    transform:translateY(-6px);
+}
+
+.phoneImage{
+
+    width:420px;
+
+    animation:floatPhone 4s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 55px #a855f7);
+}
+
+@keyframes floatPhone{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+.storeButtons{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+
+.storeButtons button{
+    padding:16px 32px;
+    border-radius:50px;
+    border:none;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.storeButtons button:first-child{
+    background:#a855f7;
+    color:white;
+}
+
+.storeButtons button:last-child{
+    background:transparent;
+    color:white;
+    border:2px solid #7d2cff;
+}
+
+.storeButtons button:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 25px rgba(168,85,247,.6);
+}
+
+.downloadRight{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.downloadRight::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#8b5cf6;
+    filter:blur(130px);
+    opacity:.35;
+    border-radius:50%;
+}
+
+.phoneImage{
+    width:100%;
+    max-width:380px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 0 30px #8d35ff);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes floatPhone{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+.storeButtons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:35px;
+
+    align-items:center;
+
+}
+
+.storeBadge{
+
+    width:180px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.storeBadge:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+    filter:drop-shadow(0 0 18px rgba(168,85,247,.55));
+
+}

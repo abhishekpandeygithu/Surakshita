@@ -1,0 +1,189 @@
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    background:#070312;
+}
+
+/* LEFT */
+
+.heroLeft{
+    width:50%;
+}
+
+.badge{
+    display:inline-block;
+    background:#181028;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:30px;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+.heroLeft h1{
+    font-size:72px;
+    line-height:1.1;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.heroLeft h1 span{
+    color:#c94cff;
+}
+
+.heroLeft p{
+    color:#b8b8b8;
+    font-size:20px;
+    line-height:1.8;
+    width:80%;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+}
+
+.primaryBtn{
+    background:#b43cff;
+    color:#fff;
+    border:none;
+    padding:18px 34px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.primaryBtn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 35px #a855f7;
+}
+
+.secondaryBtn{
+    background:transparent;
+    color:#fff;
+    border:2px solid #8d35ff;
+    padding:18px 34px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.secondaryBtn:hover{
+    background:#7d2cff;
+}
+
+/* TRUST */
+
+.trust{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-top:50px;
+}
+
+.avatars{
+    display:flex;
+}
+
+
+.avatar{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #070312;
+
+    margin-left:-12px;
+
+    transition:.3s;
+
+}
+
+.avatar:hover{
+
+    transform:translateY(-5px);
+
+}
+.avatar:first-child{
+    margin-left:0;
+}
+
+.trust h3{
+    color:#fff;
+    font-size:22px;
+}
+
+.trust p{
+    color:#bfbfbf;
+    margin-top:5px;
+}
+
+/* RIGHT */
+
+.heroRight{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.heroRight::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#8f35ff;
+    border-radius:50%;
+    filter:blur(160px);
+    opacity:.25;
+    z-index:-1;
+}
+
+.heroImage{
+    width:100%;
+    max-width:520px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 40px #8d35ff);
+    animation:float 4s ease-in-out infinite;
+    transition:.4s;
+    filter:
+
+drop-shadow(0 0 25px #8d35ff)
+
+drop-shadow(0 0 60px rgba(168,85,247,.4));
+}
+
+.heroImage:hover{
+    transform:scale(1.03);
+}
+
+/* FLOAT */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
